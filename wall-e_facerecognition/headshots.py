@@ -1,11 +1,12 @@
 import cv2
 
-name = 'Caroline' #replace with your name
+name = 'Christin' #replace with your name
 
+# cam = cv2.VideoCapture(2)
 cam = cv2.VideoCapture(0)
 
 cv2.namedWindow("press space to take a photo", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("press space to take a photo", 500, 300)
+cv2.resizeWindow("press space to take a photo", 1024, 768)
 
 img_counter = 0
 
