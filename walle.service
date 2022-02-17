@@ -1,0 +1,15 @@
+[Unit]
+Description=Start Wall-E Web Interface
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/walle-replica/web_interface
+ExecStart=/usr/bin/python3 app.py
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=walle
+User=pi
+
+[Install]
+WantedBy=multi-user.target
